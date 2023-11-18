@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, AspectRatio, Image, Text, Center, HStack, Stack, NativeBaseProvider, VStack } from "native-base";
+import { Box, Button, Heading, AspectRatio, Image, Text, Center, HStack, Stack, NativeBaseProvider, VStack } from "native-base";
 
 const CompetitionAdd = () => {
     return <Box alignItems="center">
@@ -17,21 +17,13 @@ const CompetitionAdd = () => {
                     <Stack space={2}>
                         {/* <Image source={require('../imgs/badges/3rd-badge.png')} alt="Alternate Text" size="md" /> */}
                     </Stack>
-                    <VStack p="4" space={3}>
+                    {/* <VStack p="4" space={3}> */}
                         <Stack space={2}>
-                            <Heading size="md" ml="-1">
-                                Add Compettition
-                            </Heading>
+                            <Button size="md" bgColor="#1AACFF" width={300}>
+                                <Text fontSize="md" color="white">+ New competition</Text>
+                            </Button>
                         </Stack>
-                        <Text fontWeight="400">
-                            
-                        </Text>
-                        <Text color="coolGray.600" _dark={{
-                            color: "warmGray.200"
-                        }} fontWeight="400">
-                            
-                        </Text>
-                    </VStack>
+                    {/* </VStack> */}
                 </HStack>
             </HStack>
         </Box>

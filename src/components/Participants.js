@@ -1,15 +1,18 @@
-import React from 'react';
 import { Box, Heading, Image, Text, HStack, Stack, VStack } from 'native-base';
-import rankingData from './RankingData';
+import rankingData from "../components/RankingData"
 
-const Ranking = () => {
-  return (
-    <Box alignItems="center">
+const Participants=()=>{
+    return(
+        <>
+        <Text>Add your friend</Text>
+      <HStack>
+      <Box alignItems="center">
       <Heading mb={5} mt={5}  alignItems="left">Social Heek Friends</Heading>
       {rankingData.map(item => (
         <Box
           key={item.id}
-          width="90%"
+          ml={1}
+          width={350}
           rounded="lg"
           overflow="hidden"
           borderColor="coolGray.200"
@@ -45,26 +48,13 @@ const Ranking = () => {
                 </Stack>
                 <Text fontWeight="400">Time:{item.time}</Text>
               </VStack>
-              <HStack p="4" space={3}>
-                <Stack space={2}>
-               
-                  <Heading color="#1AACFF" size="md" > 
-                  <Image
-                  source={item.token} 
-                  alt="Alternate Text"
-                  width={3}
-                  height={3}
-                />
-                    {" "+item.points}
-                  </Heading>
-                </Stack>
-              </HStack>
             </HStack>
           </HStack>
         </Box>
       ))}
     </Box>
-  );
+      </HStack>
+    </>
+    );
 };
-
-export default Ranking;
+export default Participants;
