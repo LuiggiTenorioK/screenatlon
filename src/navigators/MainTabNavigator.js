@@ -6,6 +6,7 @@ import ChallengeStackNavigator from './ChallengeStackNavigator';
 import RewardsStackNavigator from './RewardsStackNavigator';
 import AICoachScreen from '../screens/AICoachScreen';
 import AICoachStackNavigator from './AICoachStackNavigator';
+import StatsScreen from '../screens/StatsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,6 +38,12 @@ export default function MainTabNavigator() {
         title: "AI Coach",
         tabBarIcon: ({color, size}) => {
           return <Icon name='brain' solid color={color} size={size}/>
+        }
+      }}/>
+      <Tab.Screen name="Stats" component={AICoachStackNavigator} options={{
+        title: "Stats",
+        tabBarIcon: ({color, size}) => {
+          return <Icon name='chart-line' solid color={color} size={size}/>
         }
       }}/>
     </Tab.Navigator>
