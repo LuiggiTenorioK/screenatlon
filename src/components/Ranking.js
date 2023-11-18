@@ -2,11 +2,10 @@ import React from 'react';
 import { Box, Heading, Image, Text, HStack, Stack, VStack } from 'native-base';
 import rankingData from './RankingData';
 
-
 const Ranking = () => {
   return (
     <Box alignItems="center">
-      <Text underline alignItems="left">Social Heek Friends</Text>
+      <Heading mb={5} mt={5}  alignItems="left">Social Heek Friends</Heading>
       {rankingData.map(item => (
         <Box
           key={item.id}
