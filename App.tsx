@@ -23,7 +23,7 @@ function App(): JSX.Element {
       <NavigationContainer>
         <MainStackNavigator></MainStackNavigator>
       </NavigationContainer>
-      <Footer />
+      {/* <Footer /> */}
     </NativeBaseProvider>
 
   )
