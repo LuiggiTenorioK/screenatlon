@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
 import CompetitionScreen from '../screens/CompetitionScreen';
 import Icon from 'react-native-vector-icons/FontAwesome6';
+import CreateCompetitionScreen from '../screens/CreateCompetitionScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,7 @@ export default function MainTabNavigator() {
           return <Icon name='award' color={color} size={size}/>
         }
       }}/>
-      <Tab.Screen name="Profile" component={CompetitionScreen} options={{
+      <Tab.Screen name="Profile" component={CreateCompetitionScreen} options={{
         title: "Profile",
         tabBarIcon: ({color, size}) => {
           return <Icon name='user' solid color={color} size={size}/>
