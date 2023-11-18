@@ -14,6 +14,7 @@ import {
 
 import { NativeBaseProvider } from 'native-base';
 import MainStackNavigator from './src/navigators/MainStackNavigator';
+import Footer from "./src/components/Footer";
 
 
 function App(): JSX.Element {
@@ -22,6 +23,7 @@ function App(): JSX.Element {
       <NavigationContainer>
         <MainStackNavigator></MainStackNavigator>
       </NavigationContainer>
+      <Footer />
     </NativeBaseProvider>
 
   )
