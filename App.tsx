@@ -25,6 +25,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import NewModuleButton from './NewModuleButton';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -72,6 +74,7 @@ function App(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <NewModuleButton />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
