@@ -1,23 +1,25 @@
-import {Text, Button, HStack, Heading, Stack, Box} from 'native-base';
-import {View} from 'react-native';
+import {Text, Button, HStack, Heading, Stack, Box, Image,Center,ScrollView} from 'native-base';
 import Competition from '../components/Competition';
 import Competition2 from '../components/Competition2';
 import CompetitionAdd from '../components/CompetitionAdd';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-// import CompetitionScreen from './CompetitionScreen';
+import Header from "../components/Header"
 
 export default function HomeScreen({navigation}) {
   return (
-    <View>
-      <Text>Grafico</Text>
+    <ScrollView bgColor="white" pt={6}>
+        <Header/>
+     <Text fontSize="xl" mt={3} mb={1.5} ml={4}>Today</Text>
+      <Image ml={2} source={require('../imgs/Charts/Stats.png')} />
       <HStack>
         <Stack>
-          <Heading>Leaderboard</Heading>
+        <Text fontSize="xl" mt={3} mb={1.5} ml={5}>Active challenges</Text>
         </Stack>
       </HStack>
-      <TouchableOpacity onPress={()=>navigation.navigate("Competition")}><Competition  /></TouchableOpacity>      
-      <Competition2 />
-      <CompetitionAdd />
-    </View>
+      <TouchableOpacity onPress={()=>navigation.navigate("Competition")}><Box mb={2}>< Competition2 /></Box></TouchableOpacity>      
+      <Competition />
+      <TouchableOpacity onPress={()=>navigation.navigate("Create Challenge")}><Center mt={3} mb={7}><CompetitionAdd /></Center></TouchableOpacity> 
+      <Image ml={2} mb={10} source={require('../imgs/Charts/Info-card.png')} />
+    </ScrollView>
   );
 }

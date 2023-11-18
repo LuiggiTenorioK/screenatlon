@@ -24,7 +24,7 @@ const Competition = ({navigation}) => {
                             </Heading>
                         </Stack>
                         <Text fontWeight="400">
-                            5 competitors
+                            4 competitors
                         </Text>
                         <Text color="coolGray.600" _dark={{
                             color: "warmGray.200"
