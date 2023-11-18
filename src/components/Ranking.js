@@ -1,14 +1,7 @@
 import React from 'react';
-import {
-  Box,
-  Heading,
-  Image,
-  Text,
-  HStack,
-  Stack,
-  VStack,
-} from 'native-base';
-import rankingData from './RankingData'; 
+import { Box, Heading, Image, Text, HStack, Stack, VStack } from 'native-base';
+import rankingData from './RankingData';
+
 
 const Ranking = () => {
   return (
@@ -34,23 +27,39 @@ const Ranking = () => {
             backgroundColor: 'gray.50',
           }}
         >
-          <HStack alignItems="center" space={4} justifyContent="space-between">
+          <HStack alignItems="center" space={5} justifyContent="space-between">
             <HStack alignItems="center">
-               <Stack space={2}>
+              <Stack space={2}>
                 <Image
-                  source={{ uri: item.badge }} 
+                  source={item.badge} 
                   alt="Alternate Text"
-                  size="md"
+                  size="sm"
+                  borderRadius={10}
+                  ml={4}
                 />
               </Stack> 
               <VStack p="4" space={3}>
                 <Stack space={2}>
                   <Heading size="md" ml="-1">
-                    Name:{item.name}
+                    {item.name}
                   </Heading>
                 </Stack>
                 <Text fontWeight="400">Time:{item.time}</Text>
               </VStack>
+              <HStack p="4" space={3}>
+                <Stack space={2}>
+               
+                  <Heading color="#1AACFF" size="md" > 
+                  <Image
+                  source={item.token} 
+                  alt="Alternate Text"
+                  width={3}
+                  height={3}
+                />
+                    {" "+item.points}
+                  </Heading>
+                </Stack>
+              </HStack>
             </HStack>
           </HStack>
         </Box>

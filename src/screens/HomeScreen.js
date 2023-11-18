@@ -2,7 +2,9 @@ import {Text, Button, HStack, Heading, Stack, Box} from 'native-base';
 import {View} from 'react-native';
 import Competition from '../components/Competition';
 import Competition2 from '../components/Competition2';
-import CompetitionScreen from './CompetitionScreen';
+import CompetitionAdd from '../components/CompetitionAdd';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+// import CompetitionScreen from './CompetitionScreen';
 
 export default function HomeScreen({navigation}) {
   return (
@@ -13,8 +15,9 @@ export default function HomeScreen({navigation}) {
           <Heading>Leaderboard</Heading>
         </Stack>
       </HStack>
-      <Competition />
+      <TouchableOpacity onPress={()=>navigation.navigate("Competition")}><Competition  /></TouchableOpacity>      
       <Competition2 />
+      <CompetitionAdd />
     </View>
   );
 }

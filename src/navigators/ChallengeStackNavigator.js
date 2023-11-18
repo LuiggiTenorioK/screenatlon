@@ -1,17 +1,16 @@
 import { createStackNavigator } from '@react-navigation/stack';
-
-import HomeScreen from '../screens/HomeScreen';
 import CompetitionScreen from '../screens/CompetitionScreen';
-import MainTabNavigator from './MainTabNavigator';
+import HomeScreen from '../screens/HomeScreen';
+
 
 const Stack = createStackNavigator()
 
-export default function MainStackNavigator() {
+export default function ChallengeStackNavigator() {
   return (
     <Stack.Navigator screenOptions={{
-      headerShown: false
     }}>
-      <Stack.Screen name="Main" component={MainTabNavigator} />
+      <Stack.Screen name="Challenges" component={HomeScreen} />
+      <Stack.Screen name="Competition" component={CompetitionScreen} />
     </Stack.Navigator>
   )
 }
