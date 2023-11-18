@@ -15,13 +15,14 @@ import {
 import { NativeBaseProvider } from 'native-base';
 import MainStackNavigator from './src/navigators/MainStackNavigator';
 import Footer from "./src/components/Footer";
+import MainTabNavigator from './src/navigators/MainTabNavigator';
 
 
 function App(): JSX.Element {
   return (
     <NativeBaseProvider>
       <NavigationContainer>
-        <MainStackNavigator></MainStackNavigator>
+        <MainTabNavigator></MainTabNavigator>
       </NavigationContainer>
       {/* <Footer /> */}
     </NativeBaseProvider>

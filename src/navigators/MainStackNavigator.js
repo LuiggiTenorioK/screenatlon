@@ -1,7 +1,4 @@
 import { createStackNavigator } from '@react-navigation/stack';
-
-import HomeScreen from '../screens/HomeScreen';
-import CompetitionScreen from '../screens/CompetitionScreen';
 import MainTabNavigator from './MainTabNavigator';
 
 const Stack = createStackNavigator()
