@@ -24,7 +24,7 @@ export default function MainTabNavigator() {
       <Tab.Screen name="Home" component={ChallengeStackNavigator} options={{
         title: "Home",
         tabBarIcon: ({color, size}) => {
-          return <Icon name='trophy' color={color} size={size}/>
+          return <Icon name='house' color={color} size={size}/>
         }
       }}/>
       <Tab.Screen name="Rewards" component={RewardsStackNavigator} options={{

@@ -3,13 +3,13 @@ import { Center, Box, Text, VStack } from 'native-base';
 
 const Rules = () => {
   return (
-    <Center mt={5}>
+    <Center mt={5} mb={2}>
       <Box
         width="90%"
         rounded="lg"
-        borderWidth="1"
         borderColor="coolGray.300"
         p={4}
+        mb={5}
         shadow={2}
         _dark={{
           borderColor: 'coolGray.600',

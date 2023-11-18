@@ -16,7 +16,9 @@ import { NativeBaseProvider } from 'native-base';
 import MainStackNavigator from './src/navigators/MainStackNavigator';
 import Footer from "./src/components/Footer";
 import MainTabNavigator from './src/navigators/MainTabNavigator';
-
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
 
 function App(): JSX.Element {
   return (
