@@ -38,7 +38,17 @@ const RankingData = [
         socialMedia: 2,
         productivity: 3
       }
-    }
+    },
+    {
+        id: 5,
+        name: 'Luiggi',
+        time: '6h 02m/d',
+        apps: {
+          entertainment: 4,
+          socialMedia: 3,
+          productivity: 5
+        }
+      }
   ];
   
   export default RankingData;

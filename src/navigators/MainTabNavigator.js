@@ -18,21 +18,21 @@ export default function MainTabNavigator() {
       tabBarActiveTintColor: "#FFFFFF"
     }}>
       <Tab.Screen name="Home" component={HomeScreen} options={{
-        title: "Challenges",
+        title: "Home",
         tabBarIcon: ({color, size}) => {
           return <Icon name='trophy' color={color} size={size}/>
         }
       }}/>
-      <Tab.Screen name="Leaderboards" component={CompetitionScreen} options={{
-        title: "Leaderboards",
+      <Tab.Screen name="Personal Goals" component={CompetitionScreen} options={{
+        title: "Personal Goals",
         tabBarIcon: ({color, size}) => {
           return <Icon name='award' color={color} size={size}/>
         }
       }}/>
-      <Tab.Screen name="Profile" component={CreateCompetitionScreen} options={{
-        title: "Profile",
+      <Tab.Screen name="AI Coach" component={CompetitionScreen} options={{
+        title: "AI Coach",
         tabBarIcon: ({color, size}) => {
-          return <Icon name='user' solid color={color} size={size}/>
+          return <Icon name='brain' solid color={color} size={size}/>
         }
       }}/>
     </Tab.Navigator>

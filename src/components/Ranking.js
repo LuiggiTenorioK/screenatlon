@@ -46,10 +46,10 @@ const Ranking = () => {
               <VStack p="4" space={3}>
                 <Stack space={2}>
                   <Heading size="md" ml="-1">
-                    {item.name}
+                    Name:{item.name}
                   </Heading>
                 </Stack>
-                <Text fontWeight="400">{item.time} Time</Text>
+                <Text fontWeight="400">Time:{item.time}</Text>
               </VStack>
             </HStack>
           </HStack>
