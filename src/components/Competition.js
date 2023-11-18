@@ -15,7 +15,7 @@ const Competition = () => {
             <HStack alignItems="center" space={4} justifyContent="space-between">
                 <HStack alignItems="center">
                     <Stack space={2}>
-                    <Image source={require('../imgs/badges/3rd-badge.png')} alt="Alternate Text" size="md" />
+                        <Image source={require('../imgs/badges/3rd-badge.png')} alt="Alternate Text" size="md" />
                     </Stack>
                     <VStack p="4" space={3}>
                         <Stack space={2}>

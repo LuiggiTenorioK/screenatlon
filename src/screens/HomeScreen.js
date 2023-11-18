@@ -12,15 +12,9 @@ export default function HomeScreen({navigation}) {
         <Stack>
           <Heading>Leaderboard</Heading>
         </Stack>
-        <Stack>
-          <Button>Upload</Button>
-        </Stack>
       </HStack>
       <Competition />
       <Competition2 />
-      <Button onPress={() => navigation.navigate('Settings')}>
-        Go Settings
-      </Button>
     </View>
   );
 }
