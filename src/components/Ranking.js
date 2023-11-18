@@ -5,7 +5,7 @@ import rankingData from './RankingData';
 const Ranking = () => {
   return (
     <Box alignItems="center">
-      <Heading mb={5} mt={5}  alignItems="left">Social Heek Friends</Heading>
+      <Heading mb={5} mt={5}  alignItems="left">SocialHack Friends</Heading>
       {rankingData.map(item => (
         <Box
           key={item.id}
